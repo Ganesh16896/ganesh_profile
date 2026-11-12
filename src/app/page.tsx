@@ -1,15 +1,21 @@
 import ScrollyCanvas from "@/components/ScrollyCanvas";
-import Projects from "@/components/Projects";
+import MarqueeStrip from "@/components/MarqueeStrip";
+import About from "@/components/About";
 import Experience from "@/components/Experience";
-import Footer from "@/components/Footer";
+import Projects from "@/components/Projects";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#121212]">
-      <ScrollyCanvas />
-      <Experience />
-      <Projects />
-      <Footer />
-    </main>
+    <>
+      <main className="relative min-h-screen bg-ink">
+        <ScrollyCanvas />
+        <MarqueeStrip />
+        <About />
+        <Experience />
+        <Projects />
+      </main>
+      <Contact />
+    </>
   );
 }
